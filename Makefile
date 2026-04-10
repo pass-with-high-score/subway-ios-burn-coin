@@ -7,6 +7,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = SubwayCoinHack
 
 SubwayCoinHack_FILES = Tweak.x
-SubwayCoinHack_CFLAGS = -fobjc-arc
+SubwayCoinHack_CFLAGS = -fobjc-arc -Wno-deprecated-declarations
+SubwayCoinHack_FRAMEWORKS = UIKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk

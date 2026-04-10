@@ -12,8 +12,9 @@ echo "=== Step 1: Compile CoinHack.dylib ==="
 xcrun -sdk iphoneos clang \
     -arch arm64 \
     -shared \
-    -framework Foundation \
+    -framework Foundation -framework UIKit -framework CoreGraphics \
     -miphoneos-version-min=15.0 \
+    -Wno-deprecated-declarations \
     -o "$INJECT_DIR/$DYLIB_NAME" \
     "$PROJECT_DIR/CoinHack.m" \
     "$PROJECT_DIR/libs/libdobby.a" \
