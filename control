@@ -1,0 +1,9 @@
+Package: com.local.subwaycoinhack
+Name: SubwayCoinHack
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Subway City coin multiplier tweak (x10)
+Maintainer: You
+Author: You
+Section: Tweaks
+Depends: mobilesubstrate
