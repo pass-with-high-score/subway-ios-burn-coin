@@ -1,3 +1,11 @@
 .theos
 packages
 .DS_Store
+
+# Dumped/extracted IPA (too large for git)
+ipa/
+inject/
+*.ipa
+
+# Build artifacts
+libs/libdobby.a
